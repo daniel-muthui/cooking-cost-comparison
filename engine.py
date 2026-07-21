@@ -40,6 +40,8 @@ from pathlib import Path
 from tariff import load_params, band_for_consumption, effective_kwh_cost
 
 LOOKUP_PATH = Path(__file__).parent / "cct_lookup.csv"
+
+
 WEEKS_PER_MONTH = 52 / 12
 CCT_REFERENCE_SERVINGS = 2  # each CCT prepared two portions (eCAP methodology)
 
