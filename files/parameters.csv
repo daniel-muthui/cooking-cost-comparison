@@ -1,0 +1,33 @@
+category,parameter,value,unit,source,as_of,status,notes
+electricity,band1_lifeline_base,12.23,KSh/kWh,EPRA 2023 Schedule of Tariffs (frozen; KPLC 2026 review withdrawn Jun 2026),2026-06,verified,Domestic 1: avg consumption 0-30 kWh/month over 3 months
+electricity,band2_ordinary_base,16.45,KSh/kWh,EPRA 2023 Schedule of Tariffs,2026-06,verified,Domestic 2: avg 31-100 kWh/month
+electricity,band3_high_base,19.08,KSh/kWh,EPRA 2023 Schedule of Tariffs,2026-06,verified,Domestic 3: avg >100 kWh/month
+electricity,band1_threshold,30,kWh/month,EPRA,2026-06,verified,upper bound of lifeline band
+electricity,band2_threshold,100,kWh/month,EPRA,2026-06,verified,upper bound of ordinary band
+electricity,fuel_energy_cost_charge,3.14,KSh/kWh,EPRA gazette notice (June 2026 meter readings),2026-06,monthly_update,changes every month via gazette; check epra.go.ke
+electricity,forex_adjustment,0.7154,KSh/kWh,EPRA gazette notice,2026-06,monthly_update,changes every month
+electricity,wrma_levy,0.0142,KSh/kWh,EPRA gazette notice,2026-06,monthly_update,changes every month
+electricity,epra_levy,0.03,KSh/kWh,EPRA,2026-06,verified,regulatory levy
+electricity,rep_levy_rate,0.05,fraction of base charge,KPLC billing structure,2026-06,verified,Rural Electrification Programme levy = 5% of base energy charge
+electricity,vat_rate,0.16,fraction,KRA,2026-06,verified,applied to base + FECC + forex adjustment
+fuel_price,lpg,230,KSh/kg,"Nairobi retail mid-range Jul 2026: 13 kg refill KSh 2,700 (Galana) to 3,510 (TotalEnergies) = 208-270 KSh/kg",2026-07,update_locally,wide dealer spread; enter the refill price the household actually pays / cylinder kg
+fuel_price,kerosene,168.8,KSh/kg,EPRA pump price ~KSh 151.9/L (May 2026) / 0.9 kg per L,2026-05,update_locally,EPRA revises pump prices on the 14th of each month; July 2026 review due 14 Jul
+fuel_price,charcoal,70,KSh/kg,eCAP report (Rongai retail Aug 2023) -- STALE,2023-08,update_locally,no regulated price; survey local retail per kg or per tin and convert
+fuel_price,ethanol,77.83,KSh/kg,kokofuel.com Oct 2023 -- STALE,2023-10,update_locally,check current KOKO point price; KSh/L divided by 0.78 kg per L
+calorific,charcoal,31,MJ/kg,engineeringtoolbox.com (as used in eCAP report),2023,fixed,physical constant for this fuel grade
+calorific,lpg,46.1,MJ/kg,engineeringtoolbox.com,2023,fixed,
+calorific,ethanol,27,MJ/kg,engineeringtoolbox.com,2023,fixed,
+calorific,kerosene,43.1,MJ/kg,engineeringtoolbox.com,2023,fixed,
+conversion,mj_to_kwh,0.27778,kWh/MJ,SI definition (1/3.6),,fixed,
+conversion,kerosene_kg_per_litre,0.9,kg/L,eCAP study convention,2023,fixed,true density ~0.81; kept for consistency with CCT dataset
+conversion,ethanol_kg_per_litre,0.78,kg/L,eCAP study convention,2023,fixed,
+appliance_cost,epc,12995,KSh,Von-- STALE,2023,update_locally,retail prices have shifted since 2023; re-survey before payback calcs
+appliance_cost,induction_cooker,7000,KSh,eCAP report Table 6 -- STALE,2023,update_locally,excludes compatible cookware; add cookware cost for honest payback
+appliance_cost,rice_cooker,5095,KSh,Von) -- STALE,2023,update_locally,
+appliance_cost,air_fryer,18995,KSh,Kenwood) -- STALE,2023,update_locally,
+appliance_cost,infrared_cooker,6908,KSh,Sokany) -- STALE,2023,update_locally,
+appliance_cost,hot_plate,6000,KSh,Ramtons) -- STALE,2023,update_locally,
+appliance_cost,lpg_stove_cylinder,3680,KSh,eCAP report Table 6 (Total 6 kg cylinder without gas) -- STALE,2023,update_locally,meko burner assumed included
+appliance_cost,improved_charcoal_stove,5000,KSh,Burn Jikokoa) -- STALE,2023,update_locally,
+appliance_cost,kerosene_stove,740,KSh,eCAP report Table 6 -- STALE,2023,update_locally,
+appliance_cost,ethanol_stove,2000,KSh,KOKO stove + 2.3 L fuel) -- STALE,2023,update_locally,
